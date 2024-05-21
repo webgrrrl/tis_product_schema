@@ -28,11 +28,15 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
         'name' => $product->get_name(),
         'description' => $product->get_description(),
         'url' => get_permalink(),
-        'brand' => array(
-          '@type' => 'Brand',
-          'name' => get_the_brand(), // Assuming you have a function to get the brand name
-        ),
         'image' => get_the_post_thumbnail_url( get_the_ID(), 'full' ),
+        $brand = get_post_meta( $product->get_id(), '_custom_brand', true );
+        // Add brand information to schema if available
+        if ( $brand ) {
+          $product_schema['brand'] = array(
+            '@type' => 'Brand',
+            'name' => $brand,
+          );
+        }    
       );
 
       if ( $product->is_type( 'variable' ) ) {
