@@ -12,17 +12,16 @@ Adds JSON-LD product schema markup to WooCommerce product pages.
 
 == Description ==
 
-Google with all the essential details it craves. Think things like:
+Generates a JSON-LD Google product schema with all the essential details:
 
 * Product name and description
+* Product variables
 * Price and availability
 * Images
+* Brand information
+* Ratings and reviews
 
-Brand information: Shows who's behind the amazing product.
-
-Ratings and reviews: Social proof is powerful, and this lets customers know others love your products.
-
-Basically, This Is It Product Schema provides a complete package for your product schema needs. It translates all that WooCommerce product information into a language that Google understands, ultimately improving your SEO game.
+Basically, This Is It Product Schema plugin translates all that WooCommerce product information into a language that Google understands, ultimately improving your SEO game.
 
 == Frequently Asked Questions ==
 
